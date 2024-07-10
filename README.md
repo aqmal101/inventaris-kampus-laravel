@@ -19,6 +19,136 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 - [Robust background job processing](https://laravel.com/docs/queues).
 - [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
+# Inventaris Kampus Laravel
+
+This is a Laravel-based web application for managing campus inventory.
+
+## Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+- PHP >= 7.3
+- Composer
+- Node.js & NPM
+- MySQL or any other supported database
+
+## Installation
+
+Follow these steps to install and set up the project:
+
+1. **Clone the Repository**
+
+    ```bash
+    git clone https://github.com/aqmal101/inventaris-kampus-laravel.git
+    cd inventaris-kampus-laravel
+    ```
+
+2. **Install Dependencies**
+
+    - Install PHP dependencies using Composer:
+
+        ```bash
+        composer install
+        ```
+
+    - Install JavaScript dependencies using NPM:
+
+        ```bash
+        npm install
+        ```
+
+3. **Setup Environment Variables**
+
+    - Copy the `.env.example` file to `.env`:
+
+        ```bash
+        cp .env.example .env
+        ```
+
+    - Open the `.env` file and configure your database and other settings. Example configuration for MySQL:
+
+        ```dotenv
+        DB_CONNECTION=mysql
+        DB_HOST=127.0.0.1
+        DB_PORT=3306
+        DB_DATABASE=your_database_name
+        DB_USERNAME=your_database_user
+        DB_PASSWORD=your_database_password
+        ```
+
+4. **Generate Application Key**
+
+    ```bash
+    php artisan key:generate
+    ```
+
+5. **Run Migrations**
+
+    - Run the database migrations to create the necessary tables:
+
+        ```bash
+        php artisan migrate
+        ```
+
+6. **Seed the Database (Optional)**
+
+    - If there are seeders available, you can populate the database with initial data:
+
+        ```bash
+        php artisan db:seed
+        ```
+
+7. **Build Frontend Assets**
+
+    - Compile the frontend assets using Laravel Mix:
+
+        ```bash
+        npm run dev
+        ```
+
+    - For production, use:
+
+        ```bash
+        npm run prod
+        ```
+
+8. **Serve the Application**
+
+    - Start the local development server:
+
+        ```bash
+        php artisan serve
+        ```
+
+    - The application should be accessible at `http://localhost:8000`.
+
+## Usage
+
+- Visit `http://localhost:8000` in your web browser to access the application.
+- Follow the instructions on the interface to manage your campus inventory.
+
+## Contributing
+
+To contribute to this project, follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes and commit them (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Create a new Pull Request.
+
+## License
+
+This project is open-source and available under the [MIT License](LICENSE).
+
+## Acknowledgements
+
+- [Laravel](https://laravel.com/)
+- [Composer](https://getcomposer.org/)
+- [Node.js](https://nodejs.org/)
+
+
+
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
 ## Learning Laravel
